@@ -1,0 +1,53 @@
+{
+  "name": "evolv",
+  "version": "2.0.0",
+  "description": "Personal growth companion — track goals, journal your journey, and watch yourself grow",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:static": "STATIC_EXPORT=true next build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate:icons": "node scripts/generate-icons.js",
+    "cap:init:ios": "npx cap add ios",
+    "cap:init:android": "npx cap add android",
+    "cap:sync": "npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android",
+    "mobile:build": "npm run build:static && npx cap sync",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "personal-growth",
+    "goals",
+    "journal",
+    "wellness",
+    "pwa",
+    "habit-tracker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@capacitor/android": "^8.2.0",
+    "@capacitor/cli": "^8.2.0",
+    "@capacitor/core": "^8.2.0",
+    "@capacitor/ios": "^8.2.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/node": "^25.4.0",
+    "@types/react": "^19.2.14",
+    "postcss": "^8.5.8",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
